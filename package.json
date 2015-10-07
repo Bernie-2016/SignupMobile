@@ -1,8 +1,11 @@
 {
-  "name": "Bernie-2016 SignupMobile",
+  "name": "SignupMobile",
   "description": "Mobile site for people to sign up for the Sanders mailing list.",
   "homepage": "https://github.com/Bernie-2016/SignupMobile",
-  "dependencies": {
-    "qrcode.js": "git://github.com/davidshimjs/qrcodejs.git"
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bowercopy": "^1.2.3"
   }
 }
