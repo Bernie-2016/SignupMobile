@@ -9,6 +9,9 @@ body {
 input {
   vertical-align: middle;
   -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
 }
 
 label.hidden {
@@ -133,4 +136,5 @@ label.hidden {
   margin-top: 15px;
   float: none;
   width: 100%;
+  -webkit-appearance: button;
 }
