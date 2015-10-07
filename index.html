@@ -6,48 +6,46 @@
 
     <title>SignupMobile</title>
 
-    <script src='vendor/qrcode.js'></script>
-    <script src='src/displayqr.js'></script>
+    <link rel="stylesheet" href="src/fonts/jubilat.css" />
+    <link rel="stylesheet" href="src/fonts/freight-sans-pro.css" />
+    <link rel="stylesheet" href="src/css/bernie.css" />
   </head>
   <body>
-    <form class="signup">
-      <fieldset class="voter_info">
-        <legend>Join the campaign</legend>
+    <section class="join module">
+      <h2>Join the Campaign</h2>
+      <hr>
+      <form class="signup">
+        <label for="first_name" class="hidden">First Name</label>
+        <input class="first_name" type="text" id="first_name" placeholder="First Name">
 
-        <label for="first_name">First Name</label>
-        <input type="text" id="first_name">
+        <label for="last_name" class="hidden">Last Name</label>
+        <input class="last_name" type="text" id="last_name" placeholder="Last Name">
 
-        <label for="last_name">Last Name</label>
-        <input type="text" id="last_name">
+        <label for="phone" class="hidden">Cell Phone #</label>
+        <input class="phone" type="tel" id="phone" placeholder="Cell Phone #">
 
-        <label for="phone">Cell Phone #</label>
-        <input type="tel" id="phone">
+        <label for="email" class="hidden">Email Address</label>
+        <input class="email" id="email" name="email" placeholder="Email Address" type="email">
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email">
+        <label for="zip" class="hidden">Zip Code</label>
+        <input id="zip" name="zip" class="zip" placeholder="Zip Code" type="text">
 
-        <label for="zip">Zip Code</label>
-        <input type="text" id="zip">
-      </fieldset>
-      <label for="canText">Recieve text msgs from Bernie 2016</label>
-      <input type="checkbox" id="canText">
-      <span class="disclaimer">Msg and data rates may apply</span>
-      <button class="submit-form btn-primary">Sign me up</button>
-    </form>
+        <div class="checkboxgroup">
+          <input type="checkbox" id="canText">
+          <label for="canText" class="checkbox-label">Recieve text msgs from Bernie 2016</label>
+        </div>
+
+        <!-- <span class="disclaimer">Msg and data rates may apply</span> -->
+
+        <input name="submit-form" value="Sign Me Up" type="submit">
+      </form>
+    </section>
+
     <div id="qr"></div>
-    <script>
-       /* var data = {
-            first_name: 'Nathan',
-            last_name: 'Cahill',
-            phone: '616-425-9357',
-            email: 'nathan@nathancahill.com',
-            zip: '80302',
-            canText: true
-        };
 
-        DisplayQR(data, 'qr');*/
-    </script>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src='vendor/qrcode.js'></script>
+    <script src='src/displayqr.js'></script>
     <script src="src/formConnect.js"></script>
   </body>
 </html>
