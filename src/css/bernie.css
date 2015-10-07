@@ -119,6 +119,11 @@ label.hidden {
   display: block;
 }
 
+.checkboxgroup label .disclaimer {
+  font-size: 0.8em;
+  line-height: 0.8em;
+}
+
 .module input[type="submit"] {
   height: 42px;
   font-size: 1.2em;
