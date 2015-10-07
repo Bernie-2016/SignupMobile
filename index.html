@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+
+    <title>SignupMobile</title>
+
+    <script src='vendor/qrcode.js'></script>
+    <script src='src/displayqr.js'></script>
+  </head>
+  <body>
+    <div id="qr"></div>
+    <script>
+        var data = {
+            first_name: 'Nathan',
+            last_name: 'Cahill',
+            phone: '616-425-9357',
+            email: 'nathan@nathancahill.com',
+            zip: '80302',
+            canText: true
+        };
+
+        DisplayQR(data, 'qr');
+    </script>
+  </body>
+</html>
