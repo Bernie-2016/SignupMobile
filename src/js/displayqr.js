@@ -23,10 +23,14 @@ function DisplayQR(data, elemid) {
             'canText'
         ].map(function(key) {
             return data[key];
-        })).slice(1, -1);
+        })).slice(1, -1),
+
+        size = Math.min(document.getElementById(elemid).clientWidth, 256);
 
     new QRCode(elemid, {
         text: string,
+        width: size,
+        height: size,
         colorDark: '#147FD7'
     });
 }

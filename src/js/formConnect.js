@@ -11,10 +11,9 @@ $('.signup').submit(function(e) {
   };
 
   $('.signup').hide();
+  $('#qr').show();
 
   DisplayQR(data, 'qr');
-
-  $('#qr').show();
 
   return false;
 });
