@@ -8,6 +8,8 @@ module.exports = function(grunt) {
             },
             libs: {
                 files: {
+                    'jquery.js': 'jquery/dist/jquery.js',
+                    'jquery.maskedinput.js': 'jquery.maskedinput/dist/jquery.maskedinput.js',
                     'qrcode.js': 'qrcode.js/qrcode.js'
                 }
             }
