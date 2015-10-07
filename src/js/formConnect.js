@@ -1,3 +1,4 @@
+
 $('.signup').submit(function(e) {
   e.preventDefault();
 
@@ -12,6 +13,7 @@ $('.signup').submit(function(e) {
 
   $('.signup').hide();
   $('#qr').show();
+  $('#message').show();
 
   DisplayQR(data, 'qr');
 
