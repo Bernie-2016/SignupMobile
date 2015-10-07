@@ -26,7 +26,7 @@ label.hidden {
   position: relative;
   background-color: #147FD7;
   max-width: 600px;
-  padding: 1.1em 2em 2em;
+  padding: 1.1em 0.8em 2em;
   margin: 0px 0.5rem;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
@@ -102,6 +102,7 @@ label.hidden {
   margin-left: 0px;
   top: 3px;
   left: 0px;
+  -webkit-appearance: checkbox;
 }
 
 .checkboxgroup label {
