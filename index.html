@@ -10,6 +10,30 @@
     <script src='src/displayqr.js'></script>
   </head>
   <body>
+    <form class="signup">
+      <fieldset class="voter-info">
+        <legend>Join the campaign</legend>
+
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name">
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name">
+
+        <label for="cell-phone">Cell Phone #</label>
+        <input type="tel" id="cell-phone">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email">
+
+        <label for="zip-code">Zip Code</label>
+        <input type="text" id="zip-code">
+      </fieldset>
+      <label for="txt-msg">Recieve text msgs from Bernie 2016</label>
+      <input type="checkbox" id="txt-msg">
+      <span class="disclaimer">Msg and data rates may apply</span>
+      <button class="submit-form btn-primary">Sign me up</button>
+    </form>
     <div id="qr"></div>
     <script>
         var data = {
