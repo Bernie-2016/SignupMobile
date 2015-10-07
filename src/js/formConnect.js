@@ -1,4 +1,6 @@
-$('.submit-form').click(function() {
+$('.submit-form').click(function(e) {
+  e.preventDefault();
+
   var data = {
     first_name: $('#first_name').val(),
     last_name: $('#last_name').val(),
@@ -9,4 +11,6 @@ $('.submit-form').click(function() {
   };
 
   DisplayQR(data, 'qr');
+
+  return false;
 });
