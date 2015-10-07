@@ -1,4 +1,4 @@
-$('.submit-form').click(function(e) {
+$('.signup').submit(function(e) {
   e.preventDefault();
 
   var data = {
