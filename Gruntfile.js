@@ -10,6 +10,7 @@ module.exports = function(grunt) {
                 files: {
                     'jquery.js': 'jquery/dist/jquery.js',
                     'jquery.maskedinput.js': 'jquery.maskedinput/dist/jquery.maskedinput.js',
+                    'mailcheck.js': 'mailcheck/src/mailcheck.js',
                     'qrcode.js': 'qrcode.js/qrcode.js'
                 }
             }

@@ -4,6 +4,7 @@
   "homepage": "https://github.com/Bernie-2016/SignupMobile",
   "dependencies": {
     "qrcode.js": "git://github.com/davidshimjs/qrcodejs.git",
-    "jquery.maskedinput": "~1.4.1"
+    "jquery.maskedinput": "~1.4.1",
+    "mailcheck": "~1.1.1"
   }
 }
