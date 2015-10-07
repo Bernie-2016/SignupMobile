@@ -10,7 +10,11 @@ $('.signup').submit(function(e) {
     canText: $('#canText').prop('checked'),
   };
 
+  $('.signup').hide();
+
   DisplayQR(data, 'qr');
+
+  $('#qr').show();
 
   return false;
 });
