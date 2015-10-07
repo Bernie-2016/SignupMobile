@@ -2,12 +2,12 @@
 /**
  * Generates and displays a QR code.
  * @param {hash} data - JSON hash {
- *      first: {string},
- *      last: {string},
- *      cell: {string},
+ *      first_name: {string},
+ *      last_name: {string},
+ *      phone: {string},
  *      email: {string},
  *      zip: {string},
- *      optin: {boolean}
+ *      canText: {boolean}
  *  }
  * @param {string} elemid - Element ID to display QR code in.
  */
