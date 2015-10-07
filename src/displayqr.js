@@ -1,6 +1,8 @@
 
 /**
- * Generates and displays a QR code.
+ * Generates and displays a QR code. Creates a QR code with data in the format:
+ * "first_name","last_name","phone","email","zip",true
+ *
  * @param {hash} data - JSON hash {
  *      first_name: {string},
  *      last_name: {string},
@@ -12,9 +14,19 @@
  * @param {string} elemid - Element ID to display QR code in.
  */
 function DisplayQR(data, elemid) {
-    var string = JSON.stringify(data),
-        qrcode = new QRCode(elemid, {
-            text: string,
-            colorDark: '#147FD7'
-        });
+    var string = JSON.stringify([
+            'first_name',
+            'last_name',
+            'phone',
+            'email',
+            'zip',
+            'canText'
+        ].map(function(key) {
+            return data[key];
+        })).slice(1, -1);
+
+    new QRCode(elemid, {
+        text: string,
+        colorDark: '#147FD7'
+    });
 }
