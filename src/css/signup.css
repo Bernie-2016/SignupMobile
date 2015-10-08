@@ -19,3 +19,24 @@
     display: block;
     text-align: center;
 }
+
+div.email-suggestion {
+    background-color: white;
+    margin-top: -9px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: freightsans;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    font-style: italic;
+    display: none;
+    border: solid gray 1px;
+}
+
+div.email-suggestion .x {
+    float: right;
+    cursor: pointer;
+    padding-right: 3px;
+}
