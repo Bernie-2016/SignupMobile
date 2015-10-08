@@ -1,4 +1,13 @@
 
+$('#canText').on('change', function() {
+  if($(this).is(':checked')) {
+    $('#phone').attr('required', true);
+  }
+  else {
+    $('#phone').removeAttr('required');
+  }
+});
+
 $('.signup').submit(function(e) {
   e.preventDefault();
 
