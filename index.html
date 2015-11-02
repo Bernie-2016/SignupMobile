@@ -6,56 +6,46 @@
 
     <title>SignupMobile</title>
 
-    <link rel="stylesheet" href="vendor/fonts/jubilat.css" />
-    <link rel="stylesheet" href="vendor/fonts/freightsans.css" />
-    <link rel="stylesheet" href="src/css/bernie.css" />
-    <link rel="stylesheet" href="src/css/signup.css" />
+    <link rel='stylesheet' href='dist/production.min.css' />
   </head>
   <body>
-    <section class="join module">
+    <section class='join module'>
       <h2>Join the Campaign</h2>
       <hr>
-      <form class="signup">
-        <label for="first_name" class="hidden">First Name</label>
-        <input class="first_name" type="text" id="first_name" placeholder="First Name" required>
+      <form class='signup'>
+        <label for='first_name' class='hidden'>First Name</label>
+        <input class='first_name' type='text' id='first_name' placeholder='First Name' required>
 
-        <label for="last_name" class="hidden">Last Name</label>
-        <input class="last_name" type="text" id="last_name" placeholder="Last Name" required>
+        <label for='last_name' class='hidden'>Last Name</label>
+        <input class='last_name' type='text' id='last_name' placeholder='Last Name' required>
 
-        <label for="phone" class="hidden">Cell Phone #</label>
-        <input class="phone" type="tel" id="phone" placeholder="Cell Phone #">
+        <label for='phone' class='hidden'>Cell Phone #</label>
+        <input class='phone' type='tel' id='phone' placeholder='Cell Phone #'>
 
-        <label for="email" class="hidden">Email Address</label>
-        <input class="email" id="email" name="email" placeholder="Email Address" type="email" required>
+        <label for='email' class='hidden'>Email Address</label>
+        <input class='email' id='email' name='email' placeholder='Email Address' type='email' required>
         <div class='email-suggestion'>
           <span class='suggestion'></span>
           <span class='x'>X</span>
         </div>
 
-        <label for="zip" class="hidden">Zip Code</label>
-        <input id="zip" name="zip" class="zip" placeholder="Zip Code" type="tel" required>
+        <label for='zip' class='hidden'>Zip Code</label>
+        <input id='zip' name='zip' class='zip' placeholder='Zip Code' type='tel' required>
 
-        <div class="checkboxgroup">
-          <input type="checkbox" id="canText">
-          <label for="canText" class="checkbox-label">
+        <div class='checkboxgroup'>
+          <input type='checkbox' id='canText'>
+          <label for='canText' class='checkbox-label'>
             Receive text msgs from Bernie 2016
-            <span class="disclaimer"><br>Msg and data rates may apply</span>
+            <span class='disclaimer'><br>Msg and data rates may apply</span>
           </label>
         </div>
 
-        <input name="submit-form" value="Sign Me Up" type="submit">
+        <input name='submit-form' value='Sign Me Up' type='submit'>
       </form>
-      <div id="qr" style="display: none;"></div>
-      <div id="message" style="display: none;">Great! Please show the QR code to event staff.</div>
+      <div id='qr' style='display: none;'></div>
+      <div id='message' style='display: none;'>Great! Please show the QR code to event staff.</div>
     </section>
 
-    <script src="vendor/jquery.js"></script>
-    <script src='vendor/jquery.maskedinput.js'></script>
-    <script src='vendor/mailcheck.js'></script>
-    <script src='vendor/qrcode.js'></script>
-
-    <script src='src/js/displayqr.js'></script>
-    <script src="src/js/formConnect.js"></script>
-    <script src="src/js/formInput.js"></script>
+    <script src='dist/production.min.js'></script>
   </body>
 </html>
