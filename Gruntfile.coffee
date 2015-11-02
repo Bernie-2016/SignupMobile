@@ -28,8 +28,7 @@ module.exports = (grunt) ->
       dist:
         files:
           'dist/production.min.css': [
-            'src/fonts/jubilat.css'
-            'src/fonts/freightsans.css'
+            'src/css/fonts.css'
             'src/css/bernie.css'
             'src/css/signup.css'
           ]
