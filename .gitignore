@@ -1,3 +1,5 @@
-.tmp
 bower_components/
 node_modules/
+.tmp/
+dist/
+pkg/
