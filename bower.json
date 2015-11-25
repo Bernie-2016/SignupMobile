@@ -3,9 +3,10 @@
   "description": "Mobile site for people to sign up for the Sanders mailing list.",
   "homepage": "https://github.com/Bernie-2016/SignupMobile",
   "dependencies": {
+    "fabric.js": "fabric#~1.5.0",
     "jquery": "~2.1.4",
     "jquery.maskedinput": "~1.4.1",
-    "mailcheck": "~1.1.1",
-    "qrcode.js": "git://github.com/davidshimjs/qrcodejs.git"
+    "jquery-qrcode": "jquery.qrcode#~0.12.0",
+    "mailcheck": "~1.1.1"
   }
 }
