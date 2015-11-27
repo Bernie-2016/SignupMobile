@@ -1,0 +1,9 @@
+{
+  "firebase": "bernie-tickets",
+  "public": "built",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

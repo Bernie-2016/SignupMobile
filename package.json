@@ -4,6 +4,8 @@
   "homepage": "https://github.com/Bernie-2016/SignupMobile",
   "private": true,
   "devDependencies": {
+    "firebase": "^2.3.2",
+    "firebase-tools": "^2.1.0",
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-coffee": "^0.13.0",
@@ -12,7 +14,7 @@
     "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-zip": "^0.17.1",
+    "grunt-shell": "^1.1.2",
     "path": "^0.12.7"
   }
 }

@@ -5,7 +5,7 @@ module.exports = (grunt) ->
     clean: [
       '.tmp'
       'dist'
-      'pkg'
+      'built'
     ]
 
     coffee:
@@ -21,6 +21,17 @@ module.exports = (grunt) ->
             flatten: true
             src: 'src/{fonts,img}/*'
             dest: 'dist/'
+          }
+        ]
+      deploy:
+        files: [
+          {
+            expand: true
+            src: [
+              'dist/*'
+              'index.html'
+            ]
+            dest: 'built'
           }
         ]
 
@@ -39,6 +50,10 @@ module.exports = (grunt) ->
           '.tmp/bernie.css': 'src/css/bernie.scss'
           '.tmp/fonts.css': 'src/css/fonts.scss'
           '.tmp/footer.css': 'src/css/footer.scss'
+
+    shell:
+      deploy:
+        command: './node_modules/.bin/firebase deploy'
 
     uglify:
       dist:
@@ -60,12 +75,6 @@ module.exports = (grunt) ->
         ]
         tasks: ['default']
 
-    zip:
-      'pkg/SignupMobile.zip': [
-        'dist/*'
-        'index.html'
-      ]
-
   grunt.loadNpmTasks('grunt-contrib-clean')
   grunt.loadNpmTasks('grunt-contrib-coffee')
   grunt.loadNpmTasks('grunt-contrib-copy')
@@ -73,7 +82,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-contrib-sass')
   grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-contrib-watch')
-  grunt.loadNpmTasks('grunt-zip')
+  grunt.loadNpmTasks('grunt-shell')
 
   grunt.registerTask 'default', [
     'clean'
@@ -84,7 +93,8 @@ module.exports = (grunt) ->
     'copy:dist'
   ]
 
-  grunt.registerTask 'build', [
+  grunt.registerTask 'deploy', [
     'default'
-    'zip'
+    'copy:deploy'
+    'shell:deploy'
   ]
