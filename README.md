@@ -15,10 +15,10 @@ Mobile site for people to sign up for the Sanders mailing list.
 1. Clone the repository (`git clone git@github.com:Bernie-2016/SignupMobile.git`)
 2. Install npm dependencies: `npm install`
 3. Install bower dependencies: `bower install`
-4. Build assets: `grunt`
-5. Open `index.html` in a browser window
+4. Build assets: `gulp`
+5. Open `dist/index.html` in a browser window
 
-The default grunt task compiles CoffeeScript and concatenates/minifies everything into `dist/`, which is where `index.html` expects it. `grunt watch` re-runs the default task whenever a source file changes. `grunt build` runs the default task and builds necessary files into a zipfile, suitable for uploading to a hosting service.
+The default gulp task compiles CoffeeScript and concatenates/minifies everything into `dist/`. `gulp serve` runs a local server at http://localhost:9010 and watches for changes to source files. `gulp deploy` builds and deploys to Firebase.
 
 ## Contributing
 

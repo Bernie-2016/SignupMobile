@@ -1,6 +1,6 @@
 {
   "firebase": "bernie-tickets",
-  "public": "built",
+  "public": "dist",
   "ignore": [
     "firebase.json",
     "**/.*",
