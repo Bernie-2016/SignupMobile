@@ -73,6 +73,10 @@ $ ->
       img.set(top: 72.5, left: 12.5, evented: false)
       canvas.add(img)
 
+      # Dynamically set canvas size
+      canvas.setWidth($('.canvas-container').width())
+      canvas.setHeight($('.canvas-container').width() * 1.3)
+
       # Set save button to download the canvas
       $('#save').attr('href', canvas.toDataURL())
 
