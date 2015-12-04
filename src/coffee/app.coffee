@@ -25,7 +25,7 @@ $ ->
   $('div.email-suggestion .x').on 'click', ->
     $('div.email-suggestion').hide()
     
-  $('.signup').submit (e) ->
+  $('#submit-form').on 'click', (e) ->
     e.preventDefault()
     data = 
       first_name: $('#first_name').val()
@@ -35,7 +35,7 @@ $ ->
       zip: $('#zip').val()
       canText: $('#canText').prop('checked')
 
-    $('section.join').hide()
+    $('section.form').hide()
     $('section.ticket').show()
     
     string = JSON.stringify([

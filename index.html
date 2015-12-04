@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset='utf8'>
-    <meta name='viewport' content='width=450, initial-scale=1, user-scalable=no'>
+    <meta name='viewport' content='width=600px, initial-scale=1, user-scalable=no'>
     <link rel='icon' href='dist/favicon.ico' type='image/x-icon' />
 
     <title>Bernie Event Tickets</title>
@@ -14,27 +14,19 @@
       <img src='dist/logo.png' alt='Bernie 2016' class='logo' />
     </div>
 
-    <section class='join module'>
+    <section class='form'>
       <h2>Event Registration</h2>
       <hr>
       <form class='signup'>
-        <label for='first_name' class='hidden'>First Name</label>
         <input class='first_name' type='text' id='first_name' placeholder='First Name' required>
-
-        <label for='last_name' class='hidden'>Last Name</label>
         <input class='last_name' type='text' id='last_name' placeholder='Last Name' required>
-
-        <label for='phone' class='hidden'>Cell Phone #</label>
         <input class='phone' type='tel' id='phone' placeholder='Cell Phone #'>
-
-        <label for='email' class='hidden'>Email Address</label>
         <input class='email' id='email' name='email' placeholder='Email Address' type='email' required>
         <div class='email-suggestion'>
           <span class='suggestion'></span>
           <span class='x'>X</span>
         </div>
 
-        <label for='zip' class='hidden'>Zip Code</label>
         <input id='zip' name='zip' class='zip' placeholder='Zip Code' type='tel' required>
 
         <div class='checkboxgroup'>
@@ -45,15 +37,15 @@
           </label>
         </div>
 
-        <input name='submit-form' value='Sign Up' type='submit' class='btn' />
+        <a href='#' id='submit-form' class='btn'>Sign Up</a>
       </form>
     </section>
 
     <section class='ticket'>
       <div id='qr-img'></div>
       <canvas id='qr' width='400' height='520'></canvas>
-      <a id='print' class='btn print-save'>Print</a>
-      <a id='save' download='ticket.png' class='btn print-save'>Save</a>
+      <a id='print' class='btn'>Print</a><br />
+      <a id='save' download='ticket.png' class='btn'>Save</a>
     </section>
 
     <div class='footer-offset'>
