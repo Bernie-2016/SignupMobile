@@ -4,6 +4,7 @@
   "homepage": "https://github.com/Bernie-2016/SignupMobile",
   "private": true,
   "devDependencies": {
+    "coffee-script": "^1.10.0",
     "del": "^2.1.0",
     "firebase": "^2.3.2",
     "firebase-tools": "^2.1.0",
